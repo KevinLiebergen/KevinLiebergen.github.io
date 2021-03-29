@@ -41,7 +41,7 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
           <li class="nav__item"><a href="#clients" class="nav__link">Companies</a></li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
@@ -71,62 +71,39 @@
 
     <section class="work" id="work">
       <div class="row">
-        <h2>My Work</h2>
+        <h2>My projects</h2>
         <div class="work__boxes">
 
           <!-- Each div with the work__box class is a project. -->
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Programming languages</h3>
-              <p>
-                My favorite programming languages are the following:
-              </p>
-              <ul class="work__list">
-                <li>Python</li>
-                <li>Shell</li>
-                <li>Java</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/kevinliebergen" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
 
           <div class="work__box">
             <div class="work__text">
               <h3>CTF Walkthrough compilation</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                Some of my CTF walkthrough compilations.
               </p>
               <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
+                <li>Hack The box</li>
+                <li>Over The Wire</li>
+                <li>National Cyberleague GC</li>
+                <li>Atena CCN-CERT</li>
+                <li>Spanish CTFs</li>
+                <li>And some cheatsheets about dirb, gdb, nmap, sql, volatility, ida...</li>
+
               </ul>
 
               <div class="work__links">
-                <a href="#" class="link__text">
+                <a href="https://github.com/KevinLiebergen/ctf_walkthrough_compilations" class="link__text">
                   Visit Site <span>&rarr;</span>
                 </a>
-                <a href="#">
+                <a href="https://github.com/KevinLiebergen/ctf_walkthrough_compilations">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
+              <img src="./images/ctf.png" class="work__image" alt="Project 1" />
             </div>
           </div>
 
@@ -134,8 +111,8 @@
             <div class="work__text">
               <h3>Privilege escalation tool</h3>
               <p>
-                Bachelor's degree thesis titled 'Análisis de procedimientos de escalada de 
-                privilegios basado en el framework de MITRE ATT&CK'.
+                Bachelor's degree thesis titled 'Analysis of privilege escalation 
+                procedures based on the MITRE ATT&CK framework'. On systems:
               </p>
               <ul class="work__list">
                 <li>Linux</li>
@@ -152,7 +129,7 @@
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/priv-escalation.png" class="work__image" alt="Project 3" />
+              <img src="./images/tfg.png" class="work__image" alt="Project 3" />
             </div>
           </div>
 
@@ -160,14 +137,14 @@
             <div class="work__text">
               <h3>Wallapop Crawler</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                Crawler created using the Selenium python library. Functionalities have been implemented for:
               </p>
               <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
+                <li>That every ad that is visited the product URL is sent 
+                  to your own Telegram group</li>
+                <li>Crawled ads are saved in a csv</li>
+                <li>Products are displayed per terminal</li>
+                <li>The products are saved to a database with their respective fields</li>
               </ul>
 
               <div class="work__links">
@@ -180,7 +157,7 @@
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+              <img src="./images/telegram_bot.png" class="work__image" height="75%" alt="Project 3" />
             </div>
           </div>
 
@@ -188,27 +165,34 @@
             <div class="work__text">
               <h3>Insta-informer</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                Proof of concept to understand how to interact with Instagram due to the update to the new API v2.0, 
+                which only allows you to interact if you are a business or professional account.
               </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
+
+              <p>
+                The basic v2.0 API only allows you to perform certain methods.
+              </p>
+
+              <p>
+                Because of this we interact directly as if we were a browser, without API 
+                and with cookies and CSRF, necessary to disable second factor authentication.
+              </p>
+
+              <p>
+                So with this tool you can search who doesn't follow you back on Instagram.
+              </p>
 
               <div class="work__links">
-                <a href="#" class="link__text">
+                <a href="https://github.com/KevinLiebergen/insta-chivato" class="link__text">
                   Visit Site <span>&rarr;</span>
                 </a>
-                <a href="#">
+                <a href="https://github.com/KevinLiebergen/insta-chivato">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+              <img src="./images/insta_chivato.png" width="75%" class="work__image" alt="Project 3" />
             </div>
           </div>
 
@@ -216,27 +200,20 @@
             <div class="work__text">
               <h3>Keylogger</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                Keylogger that sends the keystrokes to the mail every x time.
               </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
 
               <div class="work__links">
-                <a href="#" class="link__text">
+                <a href="https://github.com/KevinLiebergen/keylogger" class="link__text">
                   Visit Site <span>&rarr;</span>
                 </a>
-                <a href="#">
+                <a href="https://github.com/KevinLiebergen/keylogger">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
+              <img src="./images/keylogger.png" class="work__image" alt="Project 1" />
             </div>
           </div>
 
@@ -244,27 +221,25 @@
             <div class="work__text">
               <h3>Telegram reminder</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                A fun reminder to get started on your final 
+                thesis degree by sending a telegram message.
               </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
+
+              <p>
+                You can also set the script in your cron file and comment the time.sleep line.
+              </p>
 
               <div class="work__links">
-                <a href="#" class="link__text">
+                <a href="https://github.com/KevinLiebergen/recordatorio_TFG" class="link__text">
                   Visit Site <span>&rarr;</span>
                 </a>
-                <a href="#">
+                <a href="https://github.com/KevinLiebergen/recordatorio_TFG">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
+              <img src="./images/telegram.png" width="60%" class="work__image" alt="Project 1" />
             </div>
           </div>
 
@@ -297,20 +272,20 @@
           <div class="about__text">
             <!-- Replace the below paragraph with info about yourself -->
             <p>
-              Hi! I'm a computer Engineer passionate about cybersecurity, I am currently 
+              Hi! I am a computer Engineer passionate about cybersecurity, I am currently 
               studying the master in cybersecurity at the University of Alcalá and
               i am also an occasional CTF player.
             </p>
 
             <p>
-              Here i'm going to publish my projects i'm currently working on or i'have finished,
-              usually i love to create projects with cybersecurity thematic.
+              Here I am going to publish my projects I am currently working on or I have finished,
+              usually I love to create projects with cybersecurity thematic.
             </p>
 
             <p>
-              I've experience at system administrator working with the philosophy of 
+              I have experience at system administrator working with the philosophy of 
               Infrastructure as code (Iac) with tools such as SaltStack, Terraform and Docker and
-              i've worked with hosting clouds such as Google Cloud Platform and Digital Ocean.
+              I have worked with hosting clouds such as Google Cloud Platform and Digital Ocean.
             </p>
 
             <p>
@@ -319,9 +294,9 @@
             </p>
 
             <p>
-              My personal goal is to get the OSCP certification, i like to pwn websites, play and 
-              achieve flags in cybersecurity platforms. Also i'm very interested in reversing and 
-              malware analysis, so i want to guide my laboral experience in these domains.
+              My personal goal is to get the OSCP certification, I like to pwn websites, play and 
+              achieve flags in cybersecurity platforms. Also I am very interested in reversing and 
+              malware analysis, so I want to guide my laboral experience in these domains.
 
             </p>
             <!-- Provide a link to your resume -->
